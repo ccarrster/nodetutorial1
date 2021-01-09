@@ -1,0 +1,13 @@
+<html>
+    <body>
+        Hello <%= data.userQuery %>
+        <ol>
+        <% data.searchResults.forEach(result =>{ %>
+            <li><%= result %></li>
+        <% }); %>
+    </ol>
+    <% if(data.loggedIn){ %>
+        <h2>You are logged in as <%= data.username %></h2>
+    <% } %>
+    </body>
+    </html>
